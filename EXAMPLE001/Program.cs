@@ -3,7 +3,7 @@
 // 782 -> 8
 // 918 -> 1
 
-System.Console.WriteLine("Введите трехзначное число: ");
+Console.WriteLine("Введите трехзначное число: ");
 string number = Console.ReadLine();
 
 
