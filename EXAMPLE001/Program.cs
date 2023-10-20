@@ -3,8 +3,13 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Введите трехзначное число: ");
-string number = Console.ReadLine();
+string InputValue()
+{
+    Console.WriteLine("Введите трехзначное число: ");
+    string number = Console.ReadLine();
+    return number;
+}
+
 
 
 int TestNumber(string num)
@@ -25,6 +30,8 @@ int TestNumber(string num)
     return value;
 }
 
+
+
 int? CreatSecondNumber(int? number, string value)
 {
     if(number != -1)
@@ -41,5 +48,7 @@ int? CreatSecondNumber(int? number, string value)
     
     return number;
 }
+
+string number = InputValue();
 
 Console.WriteLine(CreatSecondNumber(TestNumber(number), number));

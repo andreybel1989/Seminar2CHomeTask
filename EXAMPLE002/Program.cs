@@ -2,9 +2,13 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
+string InputValue()
+{
+    Console.WriteLine("Введите число");
+    string value = Console.ReadLine();
+    return value;
+}
 
-Console.WriteLine("Введите число");
-string value = Console.ReadLine();
 
 int TestValue (string num)
 {
@@ -44,4 +48,5 @@ void CreateThridNumber(int resultTestValue)
     }
 
 }
-CreateThridNumber(TestValue(value));
+
+CreateThridNumber(TestValue(InputValue()));

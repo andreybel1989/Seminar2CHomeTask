@@ -3,11 +3,14 @@
 // 7 -> да
 // 1 -> нет
 
-Console.WriteLine("Введите номер дня недели в дипазоне 1-7");
+int InputValue()
+{
+    Console.WriteLine("Введите номер дня недели в дипазоне 1-7");
 
-int numberOfDay = Convert.ToInt32(Console.ReadLine());
+    int numberOfDay = Convert.ToInt32(Console.ReadLine());
+    return numberOfDay;
+}
 
-System.Console.WriteLine(numberOfDay);
 void WeekTester(int value)
 {
     if (value < 1 || value > 7)
@@ -24,4 +27,5 @@ void WeekTester(int value)
     }
 
 }
-WeekTester(numberOfDay);
+
+WeekTester(InputValue());
